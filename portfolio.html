@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre </a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Meus Projetos</h2>
+    <article>
+      <h3>Projeto: APP de Vendas</h3>
+      <p>
+        No curso de Lógica de Programação e Algoritmos, desenvolvi um sistema simples que emula o funcionamento de um aplicativo de vendas para uma empresa. Este projeto teve como objetivo aplicar os conceitos fundamentais de lógica, fluxo condicional e operações matemáticas.
+      </p>
+      <h4>Descrição do Sistema</h4>
+      <p>
+        O sistema, denominado "Loja do João Vitor Lopis Neves", realiza as seguintes operações:
+      </p>
+      <ul>
+        <li><strong>Entrada de Dados:</strong> Solicita o preço unitário do produto e a quantidade desejada.</li>
+        <li><strong>Cálculo do Valor Total:</strong> Multiplica o valor unitário pela quantidade.</li>
+        <li><strong>Aplicação de Descontos:</strong> Aplica um desconto com base no valor total da compra, conforme as seguintes faixas:
+          <ul>
+            <li>Sem desconto para compras abaixo de R$ 2.500.</li>
+            <li>Desconto de 4% para compras entre R$ 2.500 e R$ 6.000.</li>
+            <li>Desconto de 7% para compras entre R$ 6.001 e R$ 10.000.</li>
+            <li>Desconto de 11% para compras acima de R$ 10.000.</li>
+          </ul>
+        </li>
+        <li><strong>Exibição de Resultados:</strong> Exibe o valor total da compra, o desconto aplicado e o valor final com o desconto.</li>
+      </ul>
+      <p>
+      <h4>Código do Sistema</h4>
+      </p>
+      <p>O código do projeto é apresentado abaixo, com destaque e explicações:</p>
+
+      <!-- Bloco de código destacado -->
+    <div class="code-block">
+      <pre><code>
+# Mensagem de boas-vindas
+print('Bem-Vindo à Loja do João Vitor Lopis Neves 4840374!')
+
+# Entrada do valor unitário e quantidade do produto
+valor_unitario = float(input('Entre com o valor unitário do produto: R$'))
+qtd = int(input('Entre com a quantidade do produto: '))
+
+# Cálculo do valor total sem desconto
+valor_total = valor_unitario * qtd
+
+# Implementação do desconto conforme as condições
+if valor_total < 2500:
+    desconto = 0
+elif valor_total <= 6000:
+    desconto = 4
+elif valor_total <= 10000:
+    desconto = 7
+else:
+    desconto = 11
+
+# Cálculo do valor total com desconto
+valor_com_desconto = valor_total - (valor_total * desconto / 100)
+
+# Mensagens de saída com os resultados
+print('O valor sem desconto foi: R${:.2f}'.format(valor_total))
+print('O valor com desconto foi: R${:.2f} (desconto {:.0f}%)'.format(valor_com_desconto, desconto))
+      </code></pre>
+     </div>
+      <h4>Resultados Obtidos</h4>
+      <p>
+        Este projeto permite que o usuário realize compras e veja o impacto dos descontos, tornando-se uma aplicação simples, mas funcional para vendas online. Além disso, a implementação ajudou a entender melhor a lógica de programação e a estruturação de processos lógicos em Python.
+      </p>
+      <p>
+        Para mais detalhes ou acesso ao código, entre em contato comigo através da seção de contato deste portfólio.
+      </p>
+    </article>
+  </main>
+</body>
+</html>

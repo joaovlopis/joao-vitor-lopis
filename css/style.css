@@ -1,0 +1,179 @@
+/* Resetando margens e preenchimentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Importando fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Estilo do corpo da página */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f3f4f7; /* Tom pastel mais suave */
+  color: #333333; /* Cor de texto escura */
+  line-height: 1.6;
+  text-align: center; /* Centralizando todo o texto do corpo */
+}
+
+/* Estilo do cabeçalho */
+header {
+  background: linear-gradient(to right, #A7C7E7, #F4A261); /* Gradiente suave */
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave no cabeçalho */
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #F4A261; /* Laranja pastel */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #F1D1A1; /* Efeito de hover em laranja claro */
+  transform: scale(1.1); /* Efeito de aumentar o botão */
+}
+
+/* Centralizando o conteúdo principal nas páginas */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 100px 20px 20px;
+  text-align: center; /* Centralizando o texto dentro do main */
+}
+
+h2 {
+  font-size: 32px;
+  color: #A7C7E7; /* Cor do título em azul pastel */
+  opacity: 0;
+  animation: fadeIn 1s forwards; /* Animação de fade */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+p {
+  font-size: 18px;
+  color: #333333;
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.8;
+}
+
+/* Estilo dos projetos */
+.project {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 80%;
+  max-width: 900px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Estilo para o código de projeto */
+.code-block {
+  background-color: #333333; /* Fundo escuro para destacar */
+  color: #f4f4f4; /* Texto claro */
+  padding: 15px;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace; /* Fonte de código */
+  white-space: pre-wrap; /* Quebra de linha automática */
+  word-wrap: break-word; /* Evita que o código ultrapasse o limite */
+  margin: 20px 0;
+  width: 90%; /* Aumenta a largura para 90% da tela */
+  max-width: 1000px; /* Aumenta o tamanho máximo para acomodar mais código */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: left; /* Alinhando à esquerda para manter o formato do código */
+}
+
+/* Estilo do rodapé */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #B39DDB; /* Lavanda pastel */
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+a {
+  color: #A7C7E7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para links de redes sociais */
+footer div a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+footer div a:hover {
+  color: #F4A261; /* Cor de hover nos ícones sociais */
+}
